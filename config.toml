@@ -1,0 +1,3 @@
+[server]
+# This line sometimes fixes path issues by forcing a deeper initialization
+enableCORS = true
