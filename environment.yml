@@ -1,0 +1,12 @@
+name: shopping_list_env
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - streamlit
+    - pandas
+    - google-api-python-client
+    - google-auth
+    - google-auth-oauthlib
