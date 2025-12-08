@@ -2,12 +2,12 @@ name: shopping_list_env
 channels:
   - defaults
 dependencies:
-  - python=3.9
+  - python=3.10 # CHANGED TO 3.10
   - pip
   - requests
   - certifi
   - urllib3
-  - cryptography # Added to ensure robust TLS/SSL support
+  - cryptography
   - pip:
     - streamlit
     - pandas
