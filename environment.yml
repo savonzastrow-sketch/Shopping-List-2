@@ -2,11 +2,11 @@ name: shopping_list_env
 channels:
   - defaults
 dependencies:
-  - python=3.10 # Reverting to a previously tested version
+  - python=3.10
   - pip
   - requests
   - certifi
-  - urllib3
+  - urllib3=1.26.15
   - cryptography
   - pip:
     - streamlit
