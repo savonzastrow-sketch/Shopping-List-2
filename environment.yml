@@ -2,7 +2,7 @@ name: shopping_list_env
 channels:
   - defaults
 dependencies:
-  - python=3.8 # CHANGED TO 3.8
+  - python=3.10 # Reverting to a previously tested version
   - pip
   - requests
   - certifi
