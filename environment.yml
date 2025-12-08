@@ -2,12 +2,8 @@ name: shopping_list_env
 channels:
   - defaults
 dependencies:
-  - python=3.10
+  - python=3.9 # Reverting to the version often used by Streamlit Cloud
   - pip
-  - requests
-  - certifi
-  - urllib3=1.26.0 # Updated pin
-  - cryptography
   - pip:
     - streamlit
     - pandas
