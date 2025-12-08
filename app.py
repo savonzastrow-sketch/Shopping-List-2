@@ -74,9 +74,9 @@ def load_data_from_drive(service):
     file_id = find_file_id(service, SHOPPING_FILE_NAME)
     
     if file_id is None:
-        # File not found, return empty DataFrame
+        # File not found, return empty DataFrame AND None for file_id
         default_cols = ["timestamp", "item", "purchased", "category", "store"]
-        return pd.DataFrame(columns=default_cols)
+        return pd.DataFrame(columns=default_cols), None # <-- ADDED ", None"
 
     # File found, download its content
     request = service.files().get_media(fileId=file_id)
