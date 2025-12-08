@@ -6,7 +6,8 @@ dependencies:
   - pip
   - requests
   - certifi
-  - urllib3 # Added to ensure clean network stack
+  - urllib3
+  - cryptography # Added to ensure robust TLS/SSL support
   - pip:
     - streamlit
     - pandas
