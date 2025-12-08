@@ -4,8 +4,9 @@ channels:
 dependencies:
   - python=3.9
   - pip
-  - requests # Added
-  - certifi  # Added
+  - requests
+  - certifi
+  - urllib3 # Added to ensure clean network stack
   - pip:
     - streamlit
     - pandas
