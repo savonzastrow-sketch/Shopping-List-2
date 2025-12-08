@@ -1,3 +1,12 @@
+import sys
+try:
+    from googleapiclient.discovery import build
+except ImportError:
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "google-api-python-client"])
+    from googleapiclient.discovery import build # Try import again
+# The rest of your imports start here
+
 import streamlit as st
 import pandas as pd
 from datetime import datetime
