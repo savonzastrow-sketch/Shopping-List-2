@@ -2,11 +2,11 @@ name: shopping_list_env
 channels:
   - defaults
 dependencies:
-  - python=3.9 # Reverting to the version often used by Streamlit Cloud
+  - python=3.9
   - pip
   - pip:
     - streamlit
     - pandas
-    - google-api-python-client
+    - google-api-python-client==2.89.0
     - google-auth
     - google-auth-oauthlib
