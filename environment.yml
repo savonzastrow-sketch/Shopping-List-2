@@ -4,6 +4,8 @@ channels:
 dependencies:
   - python=3.9
   - pip
+  - requests=2.27.1  # Pinning a stable requests version
+  - urllib3=1.26.9   # Pinning a compatible urllib3 version
   - pip:
     - streamlit
     - pandas
